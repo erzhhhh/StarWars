@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_height="110dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/newsTitle"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:maxLines="3"
+            android:textSize="15sp"
+            tools:text="Title" />
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/newsAuthors"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:text="Authors" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/newsSource"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:maxLines="1"
+                android:textSize="12sp"
+                tools:text="Technology" />
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/newsDate"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:textSize="12sp"
+                tools:text="Dec. 16, 12:06 pm" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/newsThumbnail"
+        android:layout_gravity="center_vertical"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:layout_width="100dp"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>
